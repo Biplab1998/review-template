@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  user-select: none;
+}
+
+body {
+  background: #daeaf6;
+}
+
+.main-div {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  color: antiquewhite;
+}
+
+#profile-img {
+  height: 25vh;
+  width: 30vh;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.container {
+  background-color: cornflowerblue;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  /* grid-row-start: 2;
+  grid-row-end: 5; */
+  /* height: 80vh;
+  display: grid;
+  place-items: center; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+  /* position: relative; */
+
+  /* min-height: 100vh;
+  display: grid;
+  place-items: center; */
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh; */
+  border-radius: 5px;
+  /* background-color: #f23557; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  /* transform: scale(1.01); */
+}
+
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.review-div {
+  /* fixed-width: 620px; */
+  /* position: absolute;
+    height: 50vh;
+  width: 50%; */
+  /* left: 30%; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+  /* justify-content: center; */
+  /* background-color: #3b4a6b; */
+}
+
+.review-div h4 {
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: #083358;
+}
+
+.review-div p {
+  font-size: 1rem;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.review-para {
+  /* margin: 1rem 2rem; */
+}
+
+#next {
+  transform: rotate(90deg);
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  right: 30%;
+  transition: transform 0.2s;
+}
+
+#prev {
+  transform: rotate(-90deg);
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  user-select: none;
+
+  left: 30%;
+  transition: transform 0.2s;
+}
+
+#next:hover {
+}
+
+#prev:hover {
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .review-para {
+    margin: 0;
+  }
+
+  #next {
+    right: 15%;
+  }
+
+  #prev {
+    left: 15%;
+  }
+}
